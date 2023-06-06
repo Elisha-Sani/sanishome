@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --primary-color: #6c63ff;
+    --background-color: rgb(230, 238, 219);
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #666;
+    --dark-color: #343a40;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --font-family: 'Roboto Slab', serif;
+  }
+
+* {
+    font-family: 'Roboto Slab', serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .logo i {
+    color:#28a745;
+}
+
+
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    background: var(--success-color);
+    color: #fff;
+}
+
+header .navbar a.active {
+    color: #fff;
+    background: greenyellow;
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--light-color);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background: var(--success-color);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+#search-form{
+    position: fixed;
+    top: -110%; left: 0;
+    height: 100%; width: 100%;
+    z-index: 1004;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#search-form #search-box {
+    width: 50rem;
+    border-bottom: .1rem solid #fff;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+
+#search-form #search-box::placeholder {
+    color: #eee;
+} 
+
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover {
+    color: var(--success-color);
+}
+
+#search-form #close {
+    position: absolute;
+    top: 2rem; right: 3rem;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header {
+      padding:1rem 2rem;  
+    }
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars {
+        display: inline-block;  
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        padding-right: 100%;
+        font-size: 2rem;
+        background: #eee;
+    }
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
+
+.container {
+    margin-top: 7.5rem;
+}
+
+
+#product {
+    margin-top: 0;
+}
+
+.image-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content button:hover {
+    background-color:var(--warning-color);
+    color: #000;
+    font-weight: 550;
+}
