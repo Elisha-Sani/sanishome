@@ -223,7 +223,7 @@ header .icons #menu-bars {
     height: 17rem;
 }
 
-.product .card .card-title h5 {
+.product .card .card-title {
     color: var(--black);
 }
 
@@ -383,6 +383,10 @@ header .icons #menu-bars {
         padding-right: 100%;
         font-size: 2rem;
         background: #eee;
+    }
+
+    .card-body .card-title{
+        font-size: 11px;
     }
 
     .card-body .card-description{
