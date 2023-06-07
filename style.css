@@ -26,10 +26,19 @@
 }
 
 html {
-    font-size: 70.5%;
+    font-size: 65.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
+}
+
+.btn {
+    color: #fff;
+    background: var(--black);
+}
+
+.btn:hover {
+    background: var(--success-color);
 }
 
 header {
@@ -153,37 +162,168 @@ header .icons #menu-bars {
     color: #fff;
 }
 
-.content .card .fa-heart,
-.content .card .fa-eye {
+.carousel-caption {
+    font-size: 16px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.product h2{
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 3rem;
+    text-decoration: solid underline;
+}
+
+.product .card .fa-heart,
+.product .card .fa-eye {
     position: absolute;
-    top: 1.5rem;
+    top: 1.1rem;
     background: #eee;
-    border-radius: 30%;
+    border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;
+    text-align: center;
     line-height: 3.5rem;
     font-size: 1.7rem;
     color: var(--black);
 }
 
-.content .card .fa-heart{
-    right: 0.2rem;
+.product .card .fa-heart:hover,
+.product .card .fa-eye:hover {
+    background: var(--success-color);
+    color: #fff;
 }
 
-.content .card .fa-eye{
-    left: 0.2rem;
+.product .card .fa-heart{
+    opacity: 0;
+}
+
+.product .card .fa-eye{
+    opacity: 0;
+}
+
+.product .card:hover .fa-heart{
+    opacity: 1;
+    right: 1.5rem;
+}
+
+.product .card:hover .fa-eye{
+    opacity: 1;
+    left: 1.5rem;
+}
+
+.product .card .image-container img {
+    height: 17rem;
+}
+
+.product .card .card-title h5 {
+    color: var(--black);
+}
+
+.product .card .card-body .stars {
+    padding: 1rem 0;
+}
+
+.product .card .card-body .stars i{
+    font-size: 1.7rem;
+    color: var(--success-color);
+}
+
+.product .card .card-body span {
+    margin-right: 1rem;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.product .card .card-body .btn{
+    color: #fff;
+    background-color: var(--black);
+}
+
+.product .card .card-body .btn:hover {
+    background-color:var(--success-color);
+    font-weight: 550;
+}
+
+
+.about {
+    padding-top: 2.2rem;
+}
+
+.about .sub-heading,
+.about .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .sub-heading {
+    font-size: 1.5rem;
+    color: var(--success-color);
+}
+
+.about .heading {
+    color: var(--black);
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    font-size: 2.5rem;
+    color: var(--black);
 }
 
 
 
-.content h2{
-    color:var(--success-color);
-    text-decoration: solid underline;
+
+
+
+
+
+
+
+
+
+
+.card-body {
+    text-align: center;
 }
 
 .card-body, .card-title, .btn{
-    font-size: 16px;
+    font-size: 14px;
 }
+
+.card-body .card-description{
+    font-size: 11px;
+    color: var(--primary-color);
+}
+
 
 
 
@@ -245,6 +385,10 @@ header .icons #menu-bars {
         background: #eee;
     }
 
+    .card-body .card-description{
+        font-size: 8.6px;
+    }
+
     #search-form #search-box {
         width: 90%;
         margin: 0 1rem;
@@ -284,11 +428,3 @@ header .icons #menu-bars {
     height: auto;
 }
 
-.content button {
-    background-color: var(--black);
-}
-
-.content button:hover {
-    background-color:var(--success-color);
-    font-weight: 550;
-}
