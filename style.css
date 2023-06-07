@@ -33,12 +33,19 @@ html {
 }
 
 .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
     color: #fff;
     background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
 }
 
 .btn:hover {
     background: var(--success-color);
+    letter-spacing: .1rem;
 }
 
 header {
@@ -337,11 +344,72 @@ header .icons #menu-bars {
     color: var(--black);
 }
 
+.review {
+    padding-top: 2.2rem;
+}
+
+.review .sub-heading,
+.review .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review .sub-heading {
+    font-size: 1.5rem;
+    color: var(--success-color);
+}
+
+.review .heading {
+    color: var(--black);
+}
 
 
+.review .swiper-slide{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    position: relative;
+}
 
+.review .swiper-slide .fa-quote-right{
+    position: absolute;
+    top: -2rem; right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
 
+.review .swiper-slide .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
+.review .swiper-slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .swiper-slide .user h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .swiper-slide .user i{
+    font-size: 1.3rem;
+    color:var(--success-color);
+}
+
+.review .swiper-slide p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
 
 
 
