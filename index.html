@@ -16,15 +16,19 @@
         <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
+        <!--Swiper Js-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
          <!-- Script for font-awesome icons -->
         <script src="https://kit.fontawesome.com/7950d3ff41.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Sani's Home</title>
 </head>
 <body>
+    <div class="container">
     <header class="header">
-        <a href="#" class="logo"><i class="fa fa-shop"></i>Sani'sHome.</a>
+        <a href="#" class="logo"><i class="fas fa-shop"></i>Sani'sHome.</a>
 
         <nav class="navbar">
             <a class ="active" href="#home">home</a>
@@ -34,12 +38,16 @@
         </nav>
 
         <div class="icons">
-            <i class="fa-solid fa-bars" id="menu-bars"></i>
-            <i class="fa-solid fa-search" id="search-icon"></i>
-            <a href="#"class="fa-solid fa-heart"></a>
-            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <i id="menu-bars" class="fas fa-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="shop.html" class="fas fa-cart-shopping" id="cart-icon">
+                <span class="quantity">0</span>
+            </a>
         </div>
+   
     </header>
+   
 <!--Header ends-->
 
 <!--Search form starts-->
@@ -51,7 +59,6 @@
 <!--Search form ends-->
 
 <!--Carousel starts Home-->
-    <div class="container">
         <section class="home" id="home">
         <div class = "col-12 col-lg-12">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
@@ -144,8 +151,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,400</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,400</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -168,8 +175,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,400</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,400</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -193,8 +200,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,400</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,400</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -218,8 +225,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,400</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,400</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -243,8 +250,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,500</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -268,8 +275,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,500</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -293,8 +300,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,500</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -318,8 +325,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,500</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -343,8 +350,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,500</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -368,8 +375,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -393,8 +400,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -418,8 +425,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -443,8 +450,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -468,8 +475,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -493,8 +500,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -518,8 +525,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -543,8 +550,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -568,8 +575,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -593,8 +600,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 4,200</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  4,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -618,8 +625,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 4,200</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  4,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -643,8 +650,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 4,200</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  4,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -668,8 +675,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 4,200</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  4,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -693,8 +700,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 4,200</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  4,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -718,8 +725,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,950</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,950</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -743,8 +750,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,600</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,600</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -768,8 +775,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,900</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,900</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -793,8 +800,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,300</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,300</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -818,8 +825,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 1,950</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  1,950</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -841,8 +848,8 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-alt"></i>
                         </div>
-                        <span>ksh 2,300</span>
-                        <a href="#" class="btn">add to cart</a>
+                        <span class ="price">KES  2,300</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -1013,24 +1020,24 @@
     <div class="box-container">
         <div class="box">
             <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">products</a>
-            <a href="#">about</a>
-            <a href="#">review</a>
+            <a href="#"><i class="fa-solid fa-home"></i>home</a>
+            <a href="#"><i class="fa-solid fa-shop"></i>products</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>about us</a>
+            <a href="#"><i class="fa-solid fa-star"></i>reviews</a>
         </div>
         <div class="box">
             <h3>contact info</h3>
-            <a href="#">+123-456-7890</a>
-            <a href="#">+111-222-3333</a>
-            <a href="#">sanishome@gmail.com</a>
-            <a href="#">Nairobi, Kenya - 00100</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+123-456-7890</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+111-222-3333</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>sanishome@gmail.com</a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i>Nairobi, Kenya - 00100</a>
         </div>
         <div class="box">
             <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">tiktok</a>
-            <a href="#">Nairobi, Kenya - 00100</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i>tiktok</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
         </div>
     </div>
 
@@ -1052,11 +1059,10 @@
 
 
 
-    <!-- Swiper js library setup -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script></footer>
 
-
-    <!--Other Scripts-->
-    <script src="script.js"></script>
+   
+    <!--Main Scripts-->
+    <script src="./script.js"></script>
+     <!-- Swiper js library setup -->
 </body>
 </html>
