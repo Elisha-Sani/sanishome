@@ -348,45 +348,6 @@ header .icons #menu-bars {
     text-decoration: solid underline;
 }
 
-.product .card .fa-heart,
-.product .card .fa-eye {
-    position: absolute;
-    top: 1.1rem;
-    background: #eee;
-    border-radius: 50%;
-    height: 3.5rem;
-    width: 3.5rem;
-    text-align: center;
-    line-height: 3.5rem;
-    font-size: 1.7rem;
-    color: var(--black);
-    margin-left: .1rem;
-}
-
-.product .card .fa-heart:hover,
-.product .card .fa-eye:hover {
-    background: var(--success-color);
-    color: #fff;
-}
-
-.product .card .fa-heart{
-    opacity: 0;
-}
-
-.product .card .fa-eye{
-    opacity: 0;
-}
-
-.product .card:hover .fa-heart{
-    opacity: 1;
-    right: 1.5rem;
-}
-
-.product .card:hover .fa-eye{
-    opacity: 1;
-    left: 1.5rem;
-}
-
 .product .card .image-container img {
     height: 17rem;
 }
@@ -495,85 +456,15 @@ header .icons #menu-bars {
     padding: 1.5rem 1rem;
 }
 
-.about .row .content .icons-container .icons i{
+.about .content .icons-container .icons i{
     font-size: 2.5rem;
     color:var(--success-color)
 }
 
-.about .row .content .icons-container .icons span{
+.about .content .icons-container .icons p{
     font-size: 1.5rem;
     color: var(--black);
 }
-
-.review {
-    padding-top: 2.2rem;
-}
-
-.review .sub-heading,
-.review .heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.review .sub-heading {
-    font-size: 1.5rem;
-    color: var(--success-color);
-}
-
-.review .heading {
-    color: var(--black);
-}
-
-
-.review .swiper-slide{
-    padding: 2rem;
-    box-shadow: var(--box-shadow);
-    border:.1rem solid rgba(0,0,0,.2);
-    border-radius: .5rem;
-    position: relative;
-}
-
-.review .swiper-slide .fa-quote-right{
-    position: absolute;
-    top: -2rem; right: 2rem;
-    font-size: 6rem;
-    color: #ccc;
-}
-
-.review .swiper-slide .user {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.review .swiper-slide .user img {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .swiper-slide .user h3 {
-    color: var(--black);
-    font-size: 2rem;
-    padding-bottom: .5rem;
-}
-
-.review .swiper-slide .user i{
-    font-size: 1.3rem;
-    color:var(--success-color);
-}
-
-.review .swiper-slide p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: var(--light-color);
-}
-
-
-
 
 .card-body {
     text-align: center;

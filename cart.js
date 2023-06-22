@@ -46,9 +46,12 @@ updateTotal();
 // Get selected products from local storage
 var selectedProducts = JSON.parse(localStorage.getItem('selectedProducts'));
 
+
+
 // Update cart with selected products
 if (selectedProducts && selectedProducts.length > 0) {
   selectedProducts.forEach(productId => {
+    
     // Perform logic to add selected products to the cart
     // You can use the productId to fetch product details from a database or an array of products
     // and dynamically generate HTML elements to display the product information in the cartContent element
